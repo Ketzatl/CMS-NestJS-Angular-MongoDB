@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cms-nestjs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cms-ng" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cms-ng-dir/cms-ng" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cms-ng/cms-ng" vcs="Git" />
+  </component>
+</project>
