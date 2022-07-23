@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-articles',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticlesComponent implements OnInit {
 
-  constructor() { }
+  // $ est une convention pour indiquer un Observable
+  articles$ = null;
 
-  ngOnInit(): void {
+  constructor( private httpClient: HttpClient) { }
+
+  ngOnInit() {
+    // @ts-ignore
+    this.articles$ = this.httpClient.get<any[]>('http://localhost:3000/articles')
   }
 
 }

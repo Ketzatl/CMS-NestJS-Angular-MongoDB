@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ArticlesRoutingModule } from './articles-routing.module';
 import { ArticlesComponent } from './articles/articles.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ArticlesComponent } from './articles/articles.component';
   ],
   imports: [
     CommonModule,
-    ArticlesRoutingModule
+    ArticlesRoutingModule,
+    HttpClientModule
   ]
 })
 export class ArticlesModule { }
